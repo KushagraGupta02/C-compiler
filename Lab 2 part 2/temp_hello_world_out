@@ -1,0 +1,62 @@
+Trans_unit
+    ├── Trans_unit
+    │   └── Ext_Dec
+    │       └── Decl
+    │           ├── Decl_specifiers [int]
+    │           └── init_dec_list
+    │               └── init_dec
+    │                   └── declarator
+    │                       └── direct_declarator
+    │                           ├── direct_declarator_identifier
+    │                           │   └── Identifer [printf]
+    │                           └── parameter_type_list [...]
+    │                               ├── parameter_list
+    │                               │   └── parameter_declaration
+    │                               │       ├── Decl_specifiers [char]
+    │                               │       │   └── Decl_specifiers [const]
+    │                               │       └── declarator [*]
+    │                               │           └── direct_declarator_identifier
+    │                               │               └── Identifer [format]
+    └── Ext_Dec
+        └── function_definition
+            ├── Decl_specifiers [int]
+            ├── declarator
+            │   └── direct_declarator
+            │       ├── direct_declarator_identifier
+            │       │   └── Identifer [main]
+            │       └── parameter_type_list
+            │           └── parameter_list
+            │               ├── parameter_list
+            │               │   └── parameter_declaration
+            │               │       ├── Decl_specifiers [int]
+            │               │       └── declarator
+            │               │           └── direct_declarator_identifier
+            │               │               └── Identifer [argc]
+            │               └── parameter_declaration
+            │                   ├── Decl_specifiers [char]
+            │                   └── declarator
+            │                       ├── pointer [*]
+            │                       └── direct_declarator_identifier
+            │                           └── Identifer [argv]
+            └── compound_statement
+                └── block_item_list
+                    ├── block_item_list
+                    │   └── block_item
+                    │       └── expression_statement
+                    │           └── expression
+                    │               └── assignment_expression
+                    │                   └── shift_expression
+                    │                       └── postfix_expression_list
+                    │                           ├── postfix_expression_primary
+                    │                           │   └── Identifer [(]
+                    │                           └── argument_expression_list
+                    │                               └── assignment_expression
+                    │                                   └── shift_expression
+                    │                                       └── postfix_expression_primary ["hello, world\n"]
+                    └── block_item
+                        └── jump_statement [;]
+                            └── expression
+                                └── assignment_expression
+                                    └── shift_expression
+                                        └── postfix_expression_primary [0]
+retv = 0
