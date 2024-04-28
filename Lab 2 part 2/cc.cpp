@@ -5,6 +5,8 @@
 #include <vector>
 #include "ast.hpp"
 #include "c.tab.hpp"
+#include "scopeCheck.hpp"
+#include "codeGen.hpp"
 
 extern "C" int yylex();
 int yyparse();
@@ -27,7 +29,29 @@ int main(int argc, char **argv)
     assert(yyin);
     extern ASTNode *tree;
     int ret = yyparse();
+    std::cout << "AAA MERI JAAN" << std::endl;
     tree->dump_ast();
     printf("retv = %d\n", ret);
+
+    // // Scope Checking
+    // ScopeStack scopes = ScopeStack();
+    // bool scopechk = scopes.check_node(tree, false);
+    // if (!scopechk) {
+    //   std::cout << "Scoping check failed." << std::endl;
+    //   ret = 1;
+    //   printf("retv = %d\n", ret);
+    //   exit(1);
+    // }
+
+    // if (optimize == 1) {
+    //   Optimizer optimizer = Optimizer();
+
+    //   optimizer.optimizeAST(AST);
+    //   std::cout << "Optimized the AST! " << std::endl;
+    //   if (dump_opt == 1) {
+    //     AST->printAST();
+    //   }
+    // }
+
     exit(0);
 }

@@ -1,6 +1,6 @@
-#line 1 "c.lex.cpp"
+#line 2 "c.lex.cpp"
 
-#line 3 "c.lex.cpp"
+#line 4 "c.lex.cpp"
 
 #define  YY_INT_ALIGNED short int
 
@@ -788,8 +788,8 @@ extern int sym_type(const char *);  /* returns type from symbol table */
 static void comment(void);
 static int check_type(void);
 #define YY_DECL extern "C" int yylex()
-#line 791 "c.lex.cpp"
 #line 792 "c.lex.cpp"
+#line 793 "c.lex.cpp"
 
 #define INITIAL 0
 
@@ -1008,7 +1008,7 @@ YY_DECL
 	{
 #line 40 "c.l"
 
-#line 1011 "c.lex.cpp"
+#line 1012 "c.lex.cpp"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -1617,7 +1617,7 @@ YY_RULE_SETUP
 #line 156 "c.l"
 ECHO;
 	YY_BREAK
-#line 1620 "c.lex.cpp"
+#line 1621 "c.lex.cpp"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 

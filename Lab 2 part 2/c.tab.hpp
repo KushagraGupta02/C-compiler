@@ -135,12 +135,14 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 18 "c.y"
+#line 19 "c.y"
 
+	ASTNodeList* list;
     char* str;
     ASTNode* node;
+	int i;
 
-#line 144 "c.tab.hpp"
+#line 146 "c.tab.hpp"
 
 };
 typedef union YYSTYPE YYSTYPE;
